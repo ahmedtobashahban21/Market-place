@@ -1,0 +1,73 @@
+﻿<!-- ======= Portfolio Section ======= -->
+
+@model List<Category>
+<section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>الصفحة الرئيسية</h2>
+            <p>القى نظرة على المحتوى</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">الجميع</li>
+                    <li data-filter=".filter-clothis">@Model[0].Name</li>
+                    <li data-filter=".filter-food">@Model[1].Name</li>
+                    <li data-filter=".filter-chebsi">@Model[2].Name</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-clothis">
+                <div class="portfolio-wrap">
+                    <img src="~/assets/img/1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>@Model[0].Name</h4>
+                        
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="~/assets/img/testimonials/testimonials-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Clothis 1"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-chebsi">
+                <div class="portfolio-wrap">
+                    <img src="~/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>@Model[2].Name</h4>
+                        
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="~/assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Icce kerem"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-food">
+                <div class="portfolio-wrap">
+                    <img src="~/assets/img/portfolio/portfolio-details-2.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>@Model[1].Name</h4>
+                        
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="assets/img/portfolio/portfolio-details-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="food 1"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+    </div>
+</section><!-- End Portfolio Section -->
